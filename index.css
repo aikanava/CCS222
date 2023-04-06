@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 * {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
-
-html {
+    text-decoration: none;
     scroll-behavior: smooth;
 }
 
 .videobg {
     position: absolute;
-    right: 0;
-    bottom: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -31,10 +27,11 @@ header {
     z-index: 99;
 }
 
-.navbar-color{
+.navbar-color {
     background-color: #2c2e2b;
     width: 100%;
 }
+
 .logo {
     width: 150px;
 }
@@ -43,7 +40,6 @@ header {
     position: relative;
     font-size: 17px;
     color: #fff;
-    text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
 }
@@ -103,7 +99,6 @@ header {
 }
 
 .main a {
-    text-decoration: none;
     display: inline-block;
     color: #fff;
     font-size: 20px;
@@ -124,7 +119,7 @@ header {
 .content h1 {
     font-weight: bolder;
     color: #d4d4d4;
-    font-size: 6vw;
+    font-size: 100px;
 }
 
 .content h3 {
@@ -132,14 +127,15 @@ header {
     color: #d4d4d4;
     padding-left: 100px;
     padding-right: 100px;
-    font-size: 1.5vw;
+    font-size: 23px;
 }
 
 .about {
     background-color: #cdcdcd;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 100px;
   }
 
 .about .container {
@@ -251,7 +247,7 @@ header {
     height: 400px;
     width: 400px;
     background: #cdcdcd;
-    border-radius: 0.5rem;
+    border-radius: 5px;
 }
 
 .box-img {
@@ -268,6 +264,7 @@ header {
     font-size: 30px;
     font-weight: bolder;
     color:#2c2e2b;
+    text-align: center;
 }
 
 .box p {
@@ -313,7 +310,7 @@ header {
 .faq details {
     text-align: justify;
     color: #2c2e2b;
-    padding-left: 15vw;
+    padding-left: 200px;
 }
 
 .faq details summary {
@@ -336,7 +333,7 @@ header {
 
 .faq hr {
     position: relative;
-    width:70vw;
+    width:1200px;
     margin: auto;
     display: block;
     height: 1px;
@@ -345,7 +342,7 @@ header {
     padding: 0;
 }
 
-.footer-distributed{
+footer {
     position: relative;
 	background: #444;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -357,51 +354,49 @@ header {
 	overflow: hidden;
 }
 
-.footer-distributed .footer-left {
+footer .footer-left {
 	float: left;
 }
 
-.footer-distributed .footer-left img {
+footer .footer-left img {
     width: 200px;
 }
 
-.footer-distributed .footer-links{
-	color:  #ffffff;
+footer .footer-links{
+	color:  #cdcdcd;
 	margin: 0 0 10px;
 	padding: 0;
 }
 
-.footer-distributed .footer-links a{
+footer .footer-links a{
 	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
+	color: #cdcdcd;
 }
 
-.footer-distributed .footer-company-name{
+footer .footer-company-name{
 	color:  #8f9296;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
 
-.footer-distributed .footer-right{
+footer .footer-right{
 	float: right;
 }
 
-.footer-distributed .footer-right p{
+footer .footer-right p{
 	display: inline-block;
 	vertical-align: top;
 	margin: 15px 42px 0 0;
 	color: #CFCDCD;
 }
 
-.footer-distributed form{
+footer form{
 	display: inline-block;
 }
 
-.footer-distributed form input,
-.footer-distributed form textarea{
+footer form input,
+footer form textarea{
 	display: block;
 	border-radius: 3px;
 	box-sizing: border-box;
@@ -416,17 +411,17 @@ header {
 	padding: 18px;
 }
 
-.footer-distributed form input{
+footer form input{
 	height: 55px;
 	margin-bottom: 15px;
 }
 
-.footer-distributed form textarea{
+footer form textarea{
 	height: 100px;
 	margin-bottom: 20px;
 }
 
-.footer-distributed form button{
+footer form button {
 	border-radius: 3px;
 	background-color:  #2c2e2b;
 	color: #cdcdcd;
@@ -435,222 +430,3 @@ header {
 	font-weight: bold;
 	float: right;
 }
-
-@media screen and (max-width:600px) {
-
-    .hamburger {
-        display: block;
-        margin-right: 15px;
-        margin-top: 10px;
-    }
-
-    header .logo {
-        width: 150px;
-        margin-top: 10px;
-    }
-
-    header .navigation {
-        position: absolute;
-        width: 100%;
-        left: -100%;
-        top: 70px;
-        width: 100%;
-        background: #5c5c5c;
-        margin-top: 50px;
-        padding: 50px;
-        transition: 0.3s;
-    }
-
-    header #nav_check:checked ~ .navigation {
-        left: 0;
-    }
-
-    header .navigation a {
-        display: block;
-    }
-
-    header .navigation a {
-        margin: 10px 0;
-    }
-
-    .navigation a::after {
-        content: ' ';
-        position: absolute;
-        left: 0;
-        bottom: -6px;
-        width: 25%;
-        height: 3px;
-        background: #fff;
-        border-radius: 5px;
-        transform-origin: left;
-        transform: scaleX(0);
-        transition: transform .5s;
-    }
-    
-    .navigation a:hover::after {
-        transform: scaleX(1);
-    }
-
-    header .navigation .contactUs {
-        margin-top: 5px;
-        margin-left: 0;
-    }
-
-    header .navigation .contactUs:hover {
-        background-color: #cdcdcd;
-        color: #5c5c5c;
-    }
-
-    .content h1 {
-        padding: 10px 10px 0 10px;
-        font-size: 45px;
-        color: #fff;
-        font-weight: 600px;
-    }
-
-    .content h3 {
-        color: #fff;
-        font-size: 13px;
-        font-weight: lighter;
-        padding: 20px 60px 60px 60px;
-    }
-
-    .main a {
-        text-decoration: none;
-        display: inline-block;
-        color: #fff;
-        font-size: 15px;
-        border: 2px solid #fff;
-        padding: 10px 30px;
-        border-radius: 50px;
-        margin-top: 5px;
-    }
-
-    .pricing {
-        background-color: #5c5c5c;
-        height: 110vh;
-        color: #5c5c5c;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .pricing .heading {
-        text-align: right;
-        color: #CFCDCD;
-        padding: 50px;
-    }
-    
-    .pricing .heading h1 {
-        font-weight: bolder;
-        font-size: 35px;
-    }
-    
-    .pricing-container {
-        display: block;
-    }
-    
-    .box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 50px;
-        margin-top: -5px;
-        height: 200px;
-        width: 200px;
-        background: #CFCDCD;
-        border-radius: 0.5rem;
-    }
-    
-    .box-img {
-        width:85px;
-        height:85px; 
-        background: #CFCDCD;
-    }
-    
-    .box-img img {
-        margin-top: 30px;
-        width: 100%;
-        background: #CFCDCD;
-    }
-    
-    .box h2 {
-        font-size: 15px;
-        font-weight: bolder;
-        color:#5c5c5c;
-        background: #CFCDCD;
-        text-align: center;
-    }
-    
-    .box p {
-        font-size: 10px;
-        color:#5c5c5c;
-        background: #CFCDCD;
-    }
-}
-
-@media screen and (max-width: 800px) {
-
-	.footer-distributed{
-		padding: 30px;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		float: none;
-		max-width: 300px;
-		margin: 0 auto;
-	}
-
-	.footer-distributed .footer-left{
-		margin-bottom: 40px;
-	}
-
-	.footer-distributed form{
-		margin-top: 30px;
-	}
-
-	.footer-distributed form{
-		display: block;
-	}
-
-	.footer-distributed form button{
-		float: none;
-	}
-}
-
-@media screen and (max-width: 900px) {
-    header {
-        padding: 0 30px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .inner-container{
-        width: 100%;
-    }
-
-	.footer-distributed {
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-company-name{
-		font-size: 12px;
-	}
-
-	.footer-distributed form input,
-	.footer-distributed form textarea{
-		width: 250px;
-	}
-
-	.footer-distributed form button{
-		padding: 10px 35px;
-	}
-
-}
-
